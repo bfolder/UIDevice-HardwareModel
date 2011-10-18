@@ -43,6 +43,9 @@
 		
 		if([hwString isEqualToString: @"iPhone3,2"]) 
 			_hardwareModel = UIHardwareModeliPhone4Verizon;
+        
+		if([hwString isEqualToString: @"iPhone4,1"]) 
+			_hardwareModel = UIHardwareModeliPhone4S;
 		
 		if([hwString isEqualToString: @"iPod1,1"])  
 			_hardwareModel = UIHardwareModeliPodTouch1G;
