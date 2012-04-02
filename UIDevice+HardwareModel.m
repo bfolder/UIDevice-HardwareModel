@@ -70,6 +70,15 @@
 		
 		if([hwString isEqualToString: @"iPad2,3"])      
 			_hardwareModel = UIHardwareModeliPad2CDMA;
+        
+		if([hwString isEqualToString: @"iPad3,1"])     
+			_hardwareModel = UIHardwareModeliPad3Wifi;
+        
+		if([hwString isEqualToString: @"iPad3,2"])     
+			_hardwareModel = UIHardwareModeliPad3GSM;
+        
+		if([hwString isEqualToString: @"iPad3,3"])     
+			_hardwareModel = UIHardwareModeliPad3CDMA;
 	}
 	
 	return _hardwareModel;

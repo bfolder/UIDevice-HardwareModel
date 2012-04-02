@@ -23,13 +23,16 @@ enum UIHardwareModel
 	UIHardwareModeliPad2Wifi = 12,
 	UIHardwareModeliPad2GSM = 13,
 	UIHardwareModeliPad2CDMA = 14,
-    UIHardwareModeliPhone4S = 15
+    UIHardwareModeliPhone4S = 15,
+	UIHardwareModeliPad3Wifi = 16,
+	UIHardwareModeliPad3GSM = 17,
+	UIHardwareModeliPad3CDMA = 18
 }; typedef NSUInteger UIHardwareModel;
 
 @interface UIDevice (HardwareModel) 
 
 /**
- *	Returns exact hardware id of device instance
+ *	Returns hardware id of device instance
  */
 -(UIHardwareModel)hardwareModel;
 
