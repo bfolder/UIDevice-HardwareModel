@@ -62,7 +62,7 @@
 		if([hwString isEqualToString: @"iPad1,1"]) 
 			_hardwareModel = UIHardwareModeliPad;
 		
-		if ([hwString isEqualToString: @"iPad2,1"])   
+		if([hwString isEqualToString: @"iPad2,1"])   
 			_hardwareModel = UIHardwareModeliPad2Wifi;
 		
 		if([hwString isEqualToString: @"iPad2,2"])   
@@ -70,6 +70,9 @@
 		
 		if([hwString isEqualToString: @"iPad2,3"])      
 			_hardwareModel = UIHardwareModeliPad2CDMA;
+			
+		if([hwString isEqualToString: @"iPad2,4"])      
+			_hardwareModel = UIHardwareModeliPad2Wifi;
         
 		if([hwString isEqualToString: @"iPad3,1"])     
 			_hardwareModel = UIHardwareModeliPad3Wifi;
