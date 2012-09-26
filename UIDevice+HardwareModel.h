@@ -26,7 +26,9 @@ enum UIHardwareModel
     UIHardwareModeliPhone4S = 15,
 	UIHardwareModeliPad3Wifi = 16,
 	UIHardwareModeliPad3GSM = 17,
-	UIHardwareModeliPad3CDMA = 18
+	UIHardwareModeliPad3CDMA = 18,
+	UIHardwareModeliPhone5 = 19,
+    UIHardwareModeliPhone5Global = 20
 }; typedef NSUInteger UIHardwareModel;
 
 @interface UIDevice (HardwareModel) 

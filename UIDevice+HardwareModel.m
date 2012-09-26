@@ -82,6 +82,12 @@
         
 		if([hwString isEqualToString: @"iPad3,3"])     
 			_hardwareModel = UIHardwareModeliPad3CDMA;
+        
+		if([hwString isEqualToString: @"iPhone5,1"])
+			_hardwareModel = UIHardwareModeliPhone5;
+        
+		if([hwString isEqualToString: @"iPhone5,2"])
+			_hardwareModel = UIHardwareModeliPhone5Global;
 	}
 	
 	return _hardwareModel;
