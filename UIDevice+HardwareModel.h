@@ -36,7 +36,14 @@ enum UIHardwareModel
 	UIHardwareModeliPhone5 = 19,
     UIHardwareModeliPhone5Global = 20,
     
-	UIHardwareModeliPodTouch5G = 21
+	UIHardwareModeliPodTouch5G = 21,
+    
+	UIHardwareModeliPadMiniWifi = 22,
+	UIHardwareModeliPadMiniGSM = 23,
+	UIHardwareModeliPadMiniCDMA = 24,
+	UIHardwareModeliPad4Wifi = 25,
+   UIHardwareModeliPad4GSM = 26,
+   UIHardwareModeliPad4CDMA = 27
     
 }; typedef NSUInteger UIHardwareModel;
 

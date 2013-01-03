@@ -91,6 +91,24 @@
         
 		if([hwString isEqualToString: @"iPod5,1"])
 			_hardwareModel = UIHardwareModeliPodTouch5G;
+        
+		if([hwString isEqualToString: @"iPad2,5"])
+			_hardwareModel = UIHardwareModeliPadMiniWifi;
+        
+		if([hwString isEqualToString: @"iPad2,6"])
+			_hardwareModel = UIHardwareModeliPadMiniGSM;
+			
+		if([hwString isEqualToString: @"iPad2,7"])
+			_hardwareModel = UIHardwareModeliPadMiniCDMA;
+        
+		if([hwString isEqualToString: @"iPad3,4"])
+			_hardwareModel = UIHardwareModeliPad4Wifi;
+        
+		if([hwString isEqualToString: @"iPad3,5"])
+			_hardwareModel = UIHardwareModeliPad4GSM;
+			
+		if([hwString isEqualToString: @"iPad3,6"])
+			_hardwareModel = UIHardwareModeliPad4CDMA;
 	}
 	
 	return _hardwareModel;
