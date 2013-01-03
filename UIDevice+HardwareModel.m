@@ -26,7 +26,7 @@
 		NSString *hwString = [NSString stringWithCString: model encoding: NSUTF8StringEncoding];
 		free(model);
 		
-		if([hwString isEqualToString: @"i386"])   
+		if([hwString isEqualToString: @"i386"] || [hwString isEqualToString:@"x86_64"])   
 			_hardwareModel = UIHardwareModelSimulator;
 		
 		if([hwString isEqualToString: @"iPhone1,1"])    
