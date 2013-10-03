@@ -89,6 +89,18 @@
 		if([hwString isEqualToString: @"iPhone5,2"])
 			_hardwareModel = UIHardwareModeliPhone5Global;
         
+		if([hwString isEqualToString: @"iPhone5,3"])
+			_hardwareModel = UIHardwareModeliPhone5c;
+        
+		if([hwString isEqualToString: @"iPhone5,4"])
+			_hardwareModel = UIHardwareModeliPhone5cGlobal;
+        
+		if([hwString isEqualToString: @"iPhone6,1"])
+			_hardwareModel = UIHardwareModeliPhone5s;
+        
+		if([hwString isEqualToString: @"iPhone6,2"])
+			_hardwareModel = UIHardwareModeliPhone5sGlobal;
+        
 		if([hwString isEqualToString: @"iPod5,1"])
 			_hardwareModel = UIHardwareModeliPodTouch5G;
         
