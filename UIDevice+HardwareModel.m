@@ -10,6 +10,112 @@
 
 @implementation UIDevice (HardwareModel)
 
+- (NSString *)hardwareName
+{
+	NSString *name = @"Unknown";
+	
+	switch ([self hardwareModel]) {
+		case UIHardwareModeliPad:
+			name = @"iPad 1G";
+			break;
+		case UIHardwareModeliPad2CDMA:
+			name = @"iPad 2 CDMA";
+			break;
+		case UIHardwareModeliPad2GSM:
+			name = @"iPad 2 GSM";
+			break;
+		case UIHardwareModeliPad2Wifi:
+			name = @"iPad 2 Wifi";
+			break;
+		case UIHardwareModeliPad3CDMA:
+			name = @"iPad 3 CDMA";
+			break;
+		case UIHardwareModeliPad3GSM:
+			name = @"iPad 3 GSM";
+			break;
+		case UIHardwareModeliPad3Wifi:
+			name = @"iPad 3 Wifi";
+			break;
+		case UIHardwareModeliPad4CDMA:
+			name = @"iPad 4 CDMA";
+			break;
+		case UIHardwareModeliPad4GSM:
+			name = @"iPad 4 GSM";
+			break;
+		case UIHardwareModeliPad4Wifi:
+			name = @"iPad 4 Wifi";
+			break;
+		case UIHardwareModeliPadMiniCDMA:
+			name = @"iPad mini CDMA";
+			break;
+		case UIHardwareModeliPadMiniGSM:
+			name = @"iPad mini GSM";
+			break;
+		case UIHardwareModeliPadMiniWifi:
+			name = @"iPad mini Wifi";
+			break;
+		case UIHardwareModeliPhone1G:
+			name = @"iPhone 1G";
+			break;
+		case UIHardwareModeliPhone3G:
+			name = @"iPhone 3G";
+			break;
+		case UIHardwareModeliPhone3GS:
+			name = @"iPhone 3Gs";
+			break;
+		case UIHardwareModeliPhone4:
+			name = @"iPhone 4";
+			break;
+		case UIHardwareModeliPhone4S:
+			name = @"iPhone 4s";
+			break;
+		case UIHardwareModeliPhone4Verizon:
+			name = @"iPhone 4 Verizon";
+			break;
+		case UIHardwareModeliPhone5:
+			name = @"iPhone 5";
+			break;
+		case UIHardwareModeliPhone5c:
+			name = @"iPhone 5c";
+			break;
+		case UIHardwareModeliPhone5cGlobal:
+			name = @"iPhone 5c Global";
+			break;
+		case UIHardwareModeliPhone5Global:
+			name = @"iPhone 5 Global";
+			break;
+		case UIHardwareModeliPhone5s:
+			name = @"iPhone 5s";
+			break;
+		case UIHardwareModeliPhone5sGlobal:
+			name = @"iPhone 5s Global";
+			break;
+		case UIHardwareModeliPodTouch1G:
+			name = @"iPod 1G";
+			break;
+		case UIHardwareModeliPodTouch2G:
+			name = @"iPod 2G";
+			break;
+		case UIHardwareModeliPodTouch3G:
+			name = @"iPod 3G";
+			break;
+		case UIHardwareModeliPodTouch4G:
+			name = @"iPod 4G";
+			break;
+		case UIHardwareModeliPodTouch5G:
+			name = @"iPod 5G";
+			break;
+		case UIHardwareModelSimulator:
+			name = @"Simulator";
+			break;
+		default:
+			name = @"Unknown";
+			break;
+	}
+	
+	return name;
+}
+
 -(UIHardwareModel)hardwareModel
 {
 	static UIHardwareModel _hardwareModel;

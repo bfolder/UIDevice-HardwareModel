@@ -1,3 +1,11 @@
+###### Add string name for hardware.
+###### Add cocoapods support.
+
+--- 
+zzymoon@gmail.com
+
+---
+
 Determines exact hardware of current iOS device. 
 
 mail@boxedfolder.com
