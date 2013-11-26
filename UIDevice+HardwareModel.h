@@ -58,7 +58,7 @@ typedef enum __UIHardwareModel
 /**
  *	Returns hardware name of device instance
  */
-- (NSString *)hardwareName
+- (NSString *)hardwareName;
 
 /**
  *	Returns hardware id of device instance
