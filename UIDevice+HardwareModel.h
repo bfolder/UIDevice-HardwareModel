@@ -1,7 +1,7 @@
 //
 //  UIDevice+HardwareModel.h
 //
-//  Created by Heiko Dreyer on 11.05.11.
+//  Created by Heiko Dreyer on 05/11/11.
 //  Copyright 2011 boxedfolder.com. All rights reserved.
 //
 
@@ -9,6 +9,7 @@
 
 enum UIHardwareModel 
 {
+    UIHardwareModelUnknown = 0,
 	UIHardwareModelSimulator = 1,
     
 	UIHardwareModeliPhone1G = 2,
@@ -49,7 +50,10 @@ enum UIHardwareModel
     UIHardwareModeliPhone5cGlobal = 29,
     
 	UIHardwareModeliPhone5s = 30,
-    UIHardwareModeliPhone5sGlobal = 31
+    UIHardwareModeliPhone5sGlobal = 31,
+    
+    UIHardwareModeliPhone6 = 32,
+    UIHardwareModeliPhone6Plus = 33
     
 }; typedef NSUInteger UIHardwareModel;
 

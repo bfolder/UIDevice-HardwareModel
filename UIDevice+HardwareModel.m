@@ -1,7 +1,7 @@
 //
 //  UIDevice+HardwareModel.m
 //
-//  Created by Heiko Dreyer on 11.05.11.
+//  Created by Heiko Dreyer on 05/11/11.
 //  Copyright 2011 boxedfolder.com. All rights reserved.
 //
 
@@ -25,6 +25,8 @@
 		
 		NSString *hwString = [NSString stringWithCString: model encoding: NSUTF8StringEncoding];
 		free(model);
+        
+        _hardwareModel = UIHardwareModelUnknown; // Unknown by default
 		
 		if([hwString isEqualToString: @"i386"] || [hwString isEqualToString:@"x86_64"])   
 			_hardwareModel = UIHardwareModelSimulator;
@@ -121,6 +123,12 @@
 			
 		if([hwString isEqualToString: @"iPad3,6"])
 			_hardwareModel = UIHardwareModeliPad4CDMA;
+            
+        if([hwString isEqualToString: @"iPhone7,1"])
+            _hardwareModel = UIHardwareModeliPhone6Plus;
+        
+        if([hwString isEqualToString: @"iPhone7,2"])
+            _hardwareModel = UIHardwareModeliPhone6;
 	}
 	
 	return _hardwareModel;
