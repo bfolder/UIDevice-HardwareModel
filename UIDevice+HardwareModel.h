@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-enum UIHardwareModel 
+typedef enum __UIHardwareModel
 {
     UIHardwareModelUnknown = 0,
 	UIHardwareModelSimulator = 1,
@@ -55,9 +55,14 @@ enum UIHardwareModel
     UIHardwareModeliPhone6 = 32,
     UIHardwareModeliPhone6Plus = 33
     
-}; typedef NSUInteger UIHardwareModel;
+} UIHardwareModel;
 
 @interface UIDevice (HardwareModel) 
+
+/**
+ *	Returns hardware name of device instance
+ */
+- (NSString *)hardwareName;
 
 /**
  *	Returns hardware id of device instance
