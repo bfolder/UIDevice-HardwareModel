@@ -10,12 +10,10 @@
 
 @implementation UIDevice (HardwareModel)
 
--(UIHardwareModel)hardwareModel
-{
+-(UIHardwareModel)hardwareModel {
 	static UIHardwareModel _hardwareModel;
 	
-	if(!_hardwareModel)
-	{
+	if(!_hardwareModel) {
 		size_t size;
 		char *model;
 		
@@ -123,12 +121,63 @@
 			
 		if([hwString isEqualToString: @"iPad3,6"])
 			_hardwareModel = UIHardwareModeliPad4CDMA;
+        
+        if([hwString isEqualToString: @"iPad5,2"])
+            _hardwareModel = UIHardwareModeliPad4CDMA;
             
         if([hwString isEqualToString: @"iPhone7,1"])
             _hardwareModel = UIHardwareModeliPhone6Plus;
         
         if([hwString isEqualToString: @"iPhone7,2"])
             _hardwareModel = UIHardwareModeliPhone6;
+        
+        if([hwString isEqualToString: @"iPhone8,1"])
+            _hardwareModel = UIHardwareModeliPhone6s;
+        
+        if([hwString isEqualToString: @"iPhone8,2"])
+            _hardwareModel = UIHardwareModeliPhone6sPlus;
+        
+        if([hwString isEqualToString: @"iPad4,4"])
+            _hardwareModel = UIHardwareModeliPadMini2Wifi;
+        
+        if([hwString isEqualToString: @"iPad4,5"])
+            _hardwareModel = UIHardwareModeliPadMini2Cellular;
+        
+        if([hwString isEqualToString: @"iPad4,6"])
+            _hardwareModel = UIHardwareModeliPadMini2CellularChina;
+        
+        if([hwString isEqualToString: @"iPad4,7"])
+            _hardwareModel = UIHardwareModeliPadMini3Wifi;
+        
+        if([hwString isEqualToString: @"iPad4,8"])
+            _hardwareModel = UIHardwareModeliPadMini3Cellular;
+        
+        if([hwString isEqualToString: @"iPad4,9"])
+            _hardwareModel = UIHardwareModeliPadMini3CellularChina;
+        
+        if([hwString isEqualToString: @"iPad5,1"])
+            _hardwareModel = UIHardwareModeliPadMini4Wifi;
+        
+        if([hwString isEqualToString: @"iPad5,2"])
+            _hardwareModel = UIHardwareModeliPadMini4Cellular;
+        
+        if([hwString isEqualToString: @"iPad4,1"])
+            _hardwareModel = UIHardwareModeliPadAirWifi;
+        
+        if([hwString isEqualToString: @"iPad4,2"])
+            _hardwareModel = UIHardwareModeliPadAirCellular;
+        
+        if([hwString isEqualToString: @"iPad4,3"])
+            _hardwareModel = UIHardwareModeliPadAirCellularChina;
+        
+        if([hwString isEqualToString: @"iiPad5,3"])
+            _hardwareModel = UIHardwareModeliPadAir2Wifi;
+        
+        if([hwString isEqualToString: @"iPad5,4"])
+            _hardwareModel = UIHardwareModeliPadAir2Cellular;
+        
+        if([hwString isEqualToString: @"iPod7,1"])
+            _hardwareModel = UIHardwareModeliPodTouch6G;
 	}
 	
 	return _hardwareModel;
